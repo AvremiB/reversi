@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+
+<head>
+    <title>שחק רברסי</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body hidden>
+    <div id="game">
+        <table id="game-board">
+            <tbody></tbody>
+        </table>
+        <div id="under-game">
+            <div id="messages-area">
+                <span id="turn"></span> <span id="steps-to-end"></span>
+                <div id="score">ניקוד: <span id="player1-score" class="reversi-circle player-score"
+                        data-player="1"></span>
+                    <span id="player2-score" class="reversi-circle player-score" data-player="2"></span>
+                </div>
+            </div>
+            <div id="buttons">
+                <button id="undo">בטל</button>
+                <button id="redo">בצע שוב</button>
+                <button id="randomal-steps">30 צעדים אקראיים</button>
+                <button id="clear">משחק חדש</button>
+                <button id="stop-aninmation" hidden>הפסק אנימציה</button>
+            </div>
+        </div>
+    </div>
+    <script src="js/logic.js"></script>
+    <script src="js/ui.js"></script>
+</body>
+
+</html>

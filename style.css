@@ -1,0 +1,104 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#game {
+    position: absolute;
+    left: 30%;
+}
+
+#game-board {
+    direction: ltr;
+    border: solid darkgray 20px;
+    background-color: darkgray;
+}
+
+td.board-cell {
+    border-style: groove;
+    border-width: 4px;
+}
+
+td.board-cell.allowed {
+    cursor: pointer;
+}
+
+.reversi-circle {
+    height: 14px;
+    width: 14px;
+    border-radius: 50%;
+    border-style: solid;
+}
+
+.reversi-circle[data-player="0"] {
+    border-color: darkgray;
+    /*must be same as #game-board {background-color}! */
+}
+
+.reversi-circle[data-player="1"] {
+    background-color: black;
+    border-color: dimgrey;
+}
+
+.reversi-circle[data-player="2"] {
+    background-color: white;
+    border-color: grey;
+}
+
+.reversi-circle.captures {
+    border-color: red !important;
+}
+
+#under-game {
+    margin: 8px;
+    text-align: center;
+    font-size: larger;
+}
+
+#score {
+    margin: 8px;
+}
+
+.player-score {
+    border-radius: 50%;
+    font-weight: bold;
+    padding: 1%;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+}
+
+.player-score.winner {
+    border-color: green !important;
+    color: green !important;
+}
+
+#player1-score {
+    color: white;
+}
+
+#buttons {
+    margin: 20px;
+    user-select: none;
+}
+
+button {
+    background-color: white;
+    cursor: pointer;
+    padding: 4px 8px;
+    border-radius: 5px;
+    border-style: solid;
+    font-size: inherit;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+button.disabled {
+    color: grey;
+    border-color: grey;
+}
+
+button.bold {
+    font-weight: 600;
+    border-width: 2.5px;
+    color: blue;
+    border-color: blue;
+}
